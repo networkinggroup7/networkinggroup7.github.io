@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+    <meta charset="utf-8" >
+    <title>Networking Fundamentals</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style> 
+    	* {
+    		box-sizing: border-box;
+
+    	}
+    	body, table td, table th {
+    		font-size: 20px;
+    	}
+
+    	ul, li {
+			font-size: 25px;
+		}
+
+		hr {
+			border-top: 1px ridge gray;
+		}
+
+    	.Bodylink:hover {
+    		color: white;
+    	}
+
+    	th, td{
+    		padding: 10px;
+    		text-align: center;
+    		margin: 0px auto;
+    	}
+
+    	table, table tr th,table tr td{
+    		border-collapse: collapse;
+    		background-color: #006666;
+			color: #b2d8d8;	
+			border-style: ridge;
+			border-radius: 20px;
+    	}
+
+    	tbody tr td {
+    		font-weight: lighter;
+    	}
+
+    	h3 {
+    		font-weight: bold;
+    	}
+
+    	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav li a:hover, .tab-content{
+			text-decoration: none;
+			background-color: #006666;
+			color: #b2d8d8;	
+			border-style: ridge;
+			border-radius: 20px;
+		}
+
+		.tab-pane {
+			text-decoration: none;
+			background-color: #006666;
+			color: #b2d8d8;	
+			border-radius: 20px;
+			margin: 0px;
+			padding: 10px;
+		}
+
+
+
+    </style>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="designs/MainDesign.css">
+	<div class="header">
+		
+	<ul style="padding-top: 20px">
+		<li><a href="umali_module5.html">LANs and WANs</a></li>
+		<li><a href="agosto_module4.html">Cable Testing</a></li>
+		<li><a href="calasan_module3.html">Media</a></li>
+		<li><a href="bravo_module2.html">Fundamentals</a></li>
+		<li><a href="mesinas_module1.html">Introduction</a></li>
+		<li><a href="Homepage.html">Homepage</a></li>
+	</ul>
+	
+	<br>
+	
+	<h1 style="font-size: 2em;" class="title">Module 2: Networking Fundamentals</h1>
+	<hr>
+
+	</div>
+	<div>
+		<hr style="clear: both">
+		<h2>Networking Devices</h2>
+		<hr style="clear: both">
+		<p>
+		<b>Physical devices</b> - required for communication and interaction between hardware on a computer network. Equipment that connects directly to a network segment is referred to as a device. There are 2 types of devices which are an end-user devices and network devices.</p>
+
+		<div style="float: left">
+			<table>
+				<thead>
+					<tr>
+						<th colspan="6">End User Devices</th>
+					</tr>
+					<tr>
+						<th>Personal Computer</th>
+						<th>Mac</th>
+						<th>Laptop</th>
+						<th>Printer</th>
+						<th>File Server</th>
+						<th>IRM Mainframe</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img src="images/computer.png" height="100px"></td>
+						<td><img src="images/mac.png" height="80px"></td>
+						<td><img src="images/laptop.png" height="140px"></td>
+						<td><img src="images/Printer.png" height="100px"></td>
+						<td><img src="images/fileServer.png" height="100px"></td>
+						<td><img src="images/mainframe.png" height="100px"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<p>
+			<br><b>End user device</b> - a personal computer (desktop or laptop), consumer device (e.g., personal digital assistant (PDA), smart phone), or removable storage media (e.g., USB flash drive, memory card, external hard drive, writeable CD or DVD) that can store information. It is a technical term referring to an IT hardware that your employees or simply some people in general would use during work, in off-hours, for leisure or any other purpose.</p>
+
+			<hr style="clear: both">
+			<div style="float: right">
+				<table>
+					<tr>
+						<th>Repeater<br>
+						<img src="images/repeater.png" height="120px"></th>
+						<td>Regenerates a signal.</td>
+					</tr>
+					<tr>
+						<th>Hub<br>
+						<img src="images/hub.png" height="50px"></th>
+						<td>Concentrates connections and <br>may regenerate a signal.</td>
+					</tr>
+					<tr>
+						<th>Bridge<br>
+						<img src="images/bridge.png" height="100px"></th>
+						<td>Convert network transmission data formats <br>as well as perform basic <br>data transmission management.</td>
+					</tr>
+					<tr>
+						<th>Switch<br>
+						<img src="images/switch.png" height="100px"></th>
+						<td>Adds more intelligence to data transfer management.</td>
+					</tr>
+					<tr>
+						<th>Router<br>
+						<img src="images/router.png" height="100px"></th>
+						<td>Includes routing and other services.</td>
+					</tr>
+				</table>
+			</div>
+
+		<p style="margin: 50px;"><b>Networking devices</b> - refers to equipment that connects to a network, which includes computers, printers and most A/V gear (receivers, media hubs and servers, Blu-ray players, etc.), which operate in an Ethernet or Wi-Fi network or both. Smartphones and tablets all have Wi-Fi but are considered mobile devices. The satisfaction of learning the use of these devices is that it can help design and built a network that is secure and serves the organization well. However, to ensure the ongoing security and availability of the network, a person should carefully monitor the network devices and activity around them in order to quickly spot hardware issues, configuration issues and attacks.</p>
+
+		<hr style="clear: both;">
+
+		<h2>Network Topology</h2>
+
+		<hr style="clear: both">
+		<p><b>Network topology</b> - refers to the manner in which the links and nodes of a network are arranged to relate to each other. Topologies are categorized as either physical network topology, which is the physical signal transmission medium, or logical network topology, which refers to the manner in which data travels through the network between devices, independent of physical connection of the devices.</p>
+
+		<p><b>Physical topology</b> - indicates arrangement of different elements of a network. It reflects physical layout of devices and cables to a form a connected network. It is concerned with essentials of network ignoring minute details like transfer of data and device type. It is the actual layout of the wires or media operated in the specified topology.</p>
+		<div>
+			<table>
+				<tr>
+					<th>Bus Topology<br>
+					<img src="images/bus.png" height="150px"></th>
+					<td>Used for Small workgroup local area networks (LANs) whose computers are connected using a thinnet cable. Trunk cables connecting hubs or switches of departmental LANs to form a larger LAN. Backboning, by joining switches and routers to form campus-wide networks.</td>
+				</tr>
+				<tr>
+					<th>Ring Topology<br>
+					<img src="images/ring.png" height="150px"></th>
+					<td>A topology for a Local Area Network (LAN) in which every device has exactly two neighbours for communication purposes. Typically, all messages travel through a ring in the same direction. A failure in any cable or device breaks the loop and will take down the entire segment.</td>
+				</tr>
+				<tr>
+					<th>Star Topology<br>
+					<img src="images/star.png" height="150px"></th>
+					<td>All nodes are individually connected to a central connection point, like a hub or a switch. A star takes more cable than e.g. a bus, but the benefit is that if a cable fails, only one node will be brought down.</td>
+				</tr>
+				<tr>
+					<th>Extended Star Topology<br>
+					<img src="images/Estar.png" height="150px"></th>
+					<td>A star network with an additional networking device connected to the main networking device. Typically, a network cable connects to one switch, and then several other switches connect to the first switch.</td>
+				</tr>
+				<tr>
+					<th>Hierarchical Topology<br>
+					<img src="images/hierarchical.png" height="130px"></th>
+					<td>The hierarchical network design model serves to help you develop a network topology in separate layers. Each layer focuses on specific functions, enabling you to choose the right equipment and features for the layer.</td>
+				</tr>
+				<tr>
+					<th>Mesh Topology<br>
+					<img src="images/Mesh.png" height="150px"></th>
+					<td>A network setup where each computer and network device is interconnected with one another. This topology setup allows for most transmissions to be distributed even if one of the connections goes down. It is a topology commonly used for wireless networks.</td>
+				</tr>
+			</table>
+		</div>		
+		<br>
+		<br>
+
+		<hr style="clear: both">
+
+		<div style="float: left; width: 50%">
+			<table>
+				<tr>
+					<th>Broadcast Topology<br>
+					<img src="images/bus.png" height="150px"></th>
+					<td>The function of this topology is to provide a message to all hosts on the same network segment. There is no order that hosts must follow to transmit data. Messages are sent on a First In, First Out (FIFO) basis. Token passing controls network access by passing an electronic token sequentially to each host.</td>
+				</tr>
+				<tr>
+					<th>Token Passing Topology<br>
+					<img src="images/ring.png" height="150px"></th>
+					<td>This logical type of topology is a local area network that sends data in one direction throughout a specified number of locations by using a token. The token is the symbol of authority for control of the transmission line. This token allows any sending station in the network to send data when the token arrives at that location.</td>
+				</tr>
+			</table>
+		</div>
+		<br>
+		<br>
+		<p><b>Logical Topology</b> - reflects arrangement of devices and their communication. It is the transmission of data over physical topology. It is independent of physical topology, irrespective of arrangements of nodes. It defines the process of how the media is accessed by the hosts when sending data.</p>
+
+		<hr style="clear: both">
+		<h2>Network Protocols</h2>
+		<hr style="clear: both">
+
+		<p><b>Protocol Suites</b> - reflects arrangement of devices and their communication. It is the transmission of data over physical topology. It is independent of physical topology, irrespective of arrangements of nodes. It defines the process of how the media is accessed by the hosts when sending data.</p>
+
+		<p><b>Protocol</b> - a formal description by which a set of rules and conventions that govern a particular aspect of how devices on a network communicate. It is a standard set of rules that allow electronic devices to communicate with each other. These rules include what type of data may be transmitted, what commands are used to send and receive data, and how data transfers are confirmed.</p>
+		
+		<p><b>Functions of Protocol</b></p>
+		<div style="padding-top: 0px">
+		<ul>
+			<li>Protocols control all aspect of data communication. It allows different network devices to communicate with each other. They are used in both analog and digital communications and can be used for important processes, ranging from transferring files between devices to accessing the internet.</li>
+			<ul>
+				<li>How the Physical network is built.</li>
+				<li>How the computers connect to the network.</li>	
+				<li>How the data is formatted for transmission.</li>	
+				<li>How that data is sent.</li>	
+				<li>How to deal with errors.</li>		
+			</ul>
+		</ul>
+		</div>
+
+		<hr style="clear: both">
+
+		<p style="padding-bottom: 0px; padding-bottom: 0px"><b>LANs</b> - also known as a Local Area Network is a collection of devices connected together in one physical location, such as a building, office, or home. It can be small or large, ranging from a home network with one user to an enterprise network with thousands of users and devices installed in buildings or facilities.</p>
+
+		<div style="display: flex">
+		<ul style="padding-left: 0px">
+			<li>Operate within a limited geographic area.</li>
+			<li>Allow many users to access high-bandwidth media.</li>
+			<li>Provide full-time connectivity to local services.</li>
+			<li>Connect physically adjacent devices.</li>
+		</ul>
+		<table style="width: 30%; margin: 20px">
+			<thead>
+				<tr>
+					<th colspan="5">Devices and Technology (LAN)</th>
+				</tr>
+				<tr>
+					<th>Router</th>
+					<th>Ethernet Switch </th>
+					<th>Hub</th>
+					<th>Bridge</th>
+					<th>ATM Switch</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><img src="images/router.png" height="80px"></td>
+					<td><img src="images/switch.png" height="80px"></td>
+					<td><img src="images/hub.png" height="80px"></td>
+					<td><img src="images/bridge.png" height="80px"></td>
+					<td><img src="images/ATMswitch.png" height="80px"></td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+
+		<hr style="clear: both;">
+
+		<p style="padding-bottom: 0px; padding-bottom: 0px"><b>WANs</b> - also known as a Wide Area Network is a large network of information that is not tied to a single location. WANs can facilitate communication, the sharing of information and much more between devices from around the world through a WAN provider.</p>
+
+		<div style="display: flex; padding-top: 0px;">
+
+		<ul style="padding-left: 0px; margin: 30px">
+			<li>Operate over a large geographically separated areas.</li>
+			<li>Provide full-time remote resources connected to local services.</li>
+		</ul>
+
+		<table style="margin: 40px">
+			<thead>
+				<tr>
+					<th colspan="4">Devices and Technology (WAN)</th>
+				</tr>
+				<tr>
+					<th>Router</th>
+					<th>Communication Server</th>
+					<th>Modem CSU/DSU/TA/NT1</th>
+					<th>WAN Bandwidth Switch</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><img src="images/router.png" height="80px"></td>
+					<td><img src="images/commServer.png" height="80px"></td>
+					<td><img src="images/modem.png" height="80px"></td>
+					<td><img src="images/WANswitch.png" height="80px"></td>
+				</tr>
+			</tbody>
+		</table>
+
+		</div>
+		<div>
+		<h3>Other Common WAN Technologies:</h3>
+
+		<ul>
+			<li><b>Analog Modems</b> - A device that converts the computer's digital pulses to tones that can be carried over analog telephone lines, and vice versa. Prior to the turn of the century, analog modems used to be standard equipment on most desktop and all laptop computers.</li>
+			<li><b>Integrated Services Digital Network (ISDN)</b> - a circuit-switched telephone network system that transmits both data and voice over a digital line. You can also think of it as a set of communication standards to transmit data, voice, and signaling. These digital lines could be copper lines.</li>
+			<li><b>Digital Subscriber Line (DSL)</b> - a modem technology that uses existing telephone lines to transport high-bandwidth data, such as multimedia and video, to service subscribers.</li>
+			<li><b>Frame Relay</b> - are devices that create one of two types of connections. Switched virtual circuits (SVC) or permanent virtual connection (PVC). Frame relay devices create SVCs when data needs to be transferred and then close those connections when they aren't in use.</li>
+			<li><b>Asynchronous Transfer Mode (ATM)</b> - a telecommunications standard defined by ANSI and ITU (formerly CCITT) for digital transmission of multiple types of traffic, including telephony (voice), data, and video signals in one network without the use of separate overlay networks.</li>
+			<li><b>T(US) and E(Europe) carrier series: T1,E1,T3,E3</b> - These circuits use multiplexing technology to simultaneously carry multiple conversations in different 64-kbps channels. A single 64-kbps channel is called a Digital Signal 0 (DS0).</li>
+			<li><b>Synchronous Optical Network (SONET)</b> - a communication protocol, developed by Bellcore – that is used to transmit a large amount of data over relatively large distances using optical fibre. With SONET, multiple digital data streams are transfered at the same time over the optical fibre.</li>
+
+		</ul>
+		</div>
+
+		<hr style="clear: both;">
+
+		<p style="padding-bottom: 0px;"><b>MANs</b> - also known as a Metropolitan Area of network is a class of network which provides a distance of a large geographical area between 5 to 50 kilometers in range. This geographical area can include several buildings, such as a college campus, sometimes referred to as a campus network, or an area as large as a city (metropolitan area).</p>
+
+		<div style="display: flex; padding-top: 0px;">
+		<ul style="margin: 50px;">
+			<li>A network that spans a metropolitan area such as a city or suburban area.</li>
+			<li>Usually consists of two or more LANs in a common geographic area.</li>
+		</ul>
+		
+		<img style="background-color: #006666; border: 2px ridge; border-radius: 20px; padding: 20px" src="images/metropolitan.png" height="150px">
+		</div>
+
+		<hr style="clear: both;">
+
+		<p style="padding-bottom: 0px;"><b>SANs</b> - Storage-Area Networks is an independent high-speed network that interconnects and delivers shared pools of storage devices to multiple servers. Each server can access shared storage as if it were a drive directly attached to the server.</p>
+
+		<div style="display: flex; padding-top: 0px;">
+		<img style="background-color: #006666; border: 2px ridge; border-radius: 20px; padding: 20px" src="images/storage.png" height="150px">
+
+		<ul style="margin: 50px;">
+			<li>A dedicated high-performance network used to move data between servers and storage resources. </li>
+		</ul>
+		</div>
+
+		<hr style="clear: both;">
+
+		<p style="padding-bottom: 0px;"><b>VPNs</b> - Virtual Private Network is an encrypted connection over the Internet from a device to a network. The encrypted connection helps ensure that sensitive data is safely transmitted. It prevents unauthorized people from eavesdropping on the traffic and allows the user to conduct work remotely. It is a dedicated high-performance network used to move data between servers and storage resources. </p>
+
+		<div style="padding-top: 0px;">
+		<ul style="padding-left: 0px">
+			<li>It is a dedicated high-performance network used to move data between servers and storage resources. </li>
+			<li>private network that is constructed within a public network infrastructure such as the global Internet.</li>
+			<li>most cost effective method of establishing secured connection.</li>
+
+		</ul>
+
+		<table style="margin: 20px;">
+			<thead>
+				<tr>
+					<th colspan="5">VPN Types</th>
+				</tr>
+				<tr>
+					<th>Access VPNs</th>
+					<th>Intranet VPNs</th>
+					<th>Extranet VPNs</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>enables users who are working remotely to securely access and use applications and data that reside in the corporate data center and headquarters, encrypting all traffic the users send and receive.</td>
+					<td>links outside customers, suppliers, partners, or communities of interest to an enterprise customer's network over a shared infrastructure using dedicated connections.</td>
+					<td>provides a site to site internal connectivity within the company. The collection of all internal company sites, connected in this way, is often referred to as the company's Intranet. Intranet VPNs provide the same level of connectivity and reliability as a fully private network.</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+
+		<hr style="clear: both;">
+		<h2>Bandwidth</h2>
+		<hr style="clear: both;">
+
+		<p style="padding-bottom: 0px;"><b>Digital Bandwidth</b> - is a medium that is used to measure te speed of the transmission capable of an ethernet network. It is determined as the number of pulses per second or the unit in bits per second.</p>
+
+		<div style="padding-top: 0px;">
+		<ul style="padding-left: 0px">
+			<li>Bps - Bits per second is a common measure of data speed for computer modems and transmission carriers. As the term implies, the speed in bps is equal to the number of bits transmitted or received each second.</li>
+			<li>Mbps - megabits per second is a measure of internet bandwidth. In simple terms, bandwidth is the download rate of your internet connection.</li>
+			<li>Gbps - Gigabits per second is also a unit of measure where a single Gigabyte per second is equal to 1,000 Megabits per second (Mbps) or 1,000,000,000 bits per second. It is commonly used to measure data transfer speeds between hardware devices.</li>
+		</ul>
+		</div>
+
+		<hr style="clear: both;">
+
+		<p style="padding-bottom: 0px;"><b>Throughput</b> - refers to how much data can be transferred from one location to another in a given amount of time. It is used to measure the performance of hard drives and RAM, as well as Internet and network connections. It is conisdered as the actual measurement bandwidth.</p>
+
+		<p style="padding-bottom: 0px;"><b>Factors: </b></p>
+		<div style="padding-top: 0px;">
+		<ul style="padding-left: 0px">
+			<li>Internetworking Device</li>
+			<li>Type of data</li>
+			<li>Network Topology</li>
+			<li>Number of users on the network</li>
+			<li>User's Computer</li>
+			<li>Server Computer</li>
+			<li>Power Conditions</li>
+		</ul>
+		</div>
+
+		<hr style="clear: both;">
+		<h2>Network Model</h2>
+		<hr style="clear: both;">
+
+		<p style="padding-bottom: 0px;"><b>Data communication</b> - The process where networks transmit digital data from one computer to another computer using a variety of wired and wireless communication channels. One such network, the Internet, is an immense global network of smaller interconnected networks linking millions of computers.</p>
+
+		<p style="padding-bottom: 0px;"><b>Networking Standards</b> - Define the rules for data communications that are needed for interoperability of networking technologies and processes. Standards help in creating and maintaining open markets and allow different vendors to compete on the basis of the quality of their products while being compatible with existing market products.</p>
+
+		<hr style="clear: both;">
+
+		<h2>OSI Model</h2>
+
+		<p style="padding-bottom: 0px;"><b>Open Systems Interconnection Model</b><br>A conceptual framework used to describe the functions of a networking system displayed in layers. It characterizes computing functions into a universal set of rules and requirements in order to support interoperability between different products and software.</p>
+
+
+		<p style="padding-bottom: 0px;"><b>Advantages of a layered model: </b></p>
+		<div style="padding-top: 0px;">
+		<ul style="padding-left: 0px">
+			<li>Reduces complexity</li>
+			<li>Standardize interface</li>
+			<li>Facilitates modular engineering</li>
+			<li>Ensures technology compatibility</li>
+			<li>Accelerates evolution</li>
+			<li>Simplifies teaching and learning</li>
+		</ul>
+		</div>
+
+		<hr style="clear: both;">
+
+		<h2 style="padding:0px; margin: 0px;">The 7 Layers of the OSI Model</h2>
+		<div style="display: flex;" class="container justify-content-center">
+		  <ul class="nav nav-tabs nav-stacked">
+		    <li class="active"><a data-toggle="tab" href="#home">Application</a></li>
+		    <li><a data-toggle="tab" href="#menu1">Presentation</a></li>
+		    <li><a data-toggle="tab" href="#menu2">Session</a></li>
+		    <li><a data-toggle="tab" href="#menu3">Transport</a></li>
+		    <li><a data-toggle="tab" href="#menu4">Network</a></li>
+		    <li><a data-toggle="tab" href="#menu5">Data Link</a></li>
+		    <li><a data-toggle="tab" href="#menu6">Physical</a></li>
+		  </ul>
+
+		  <div class="tab-content">
+		    <div id="home" class="tab-pane fade in active">
+				<h3>Application Layer: Layer 7</h3>
+				<p>At this layer, both the end user and the application layer interact directly with the software application. This layer sees network services provided to end-user applications. The application layer identifies communication partners, resource availability, and synchronizes communication.</p>
+		    </div>
+		    <div id="menu1" class="tab-pane fade">
+				<h3>Presentation Layer: Layer 6</h3>
+		      	<p>The presentation layer formats or translates data for the application layer based on the syntax or semantics that the application accepts. Because of this, it at times also called the syntax layer. This layer can also handle the encryption and decryption required by the application layer.</p>
+		    </div>
+		    <div id="menu2" class="tab-pane fade">
+				<h3>Session Layer: Layer 5</h3>
+				<p>The session layer controls the conversations between different computers. A session or connection between machines is set up, managed, and termined at layer 5. Session layer services also include authentication and reconnections.</p>
+		    </div>
+		    <div id="menu3" class="tab-pane fade">
+				<h3>Transport Layer: Layer 4</h3>
+				<p>The transport layer manages the delivery and error checking of data packets. It regulates the size, sequencing, and ultimately the transfer of data between systems and hosts. One of the most common examples of the transport layer is TCP or the Transmission Control Protocol.</p>
+		    </div>
+		    <div id="menu4" class="tab-pane fade">
+				<h3>Network Layer: Layer 3</h3>
+				<p>The network layer is responsible for receiving frames from the data link layer, and delivering them to their intended destinations among based on the addresses contained inside the frame. The network layer finds the destination by using logical addresses, such as IP (internet protocol). At this layer, routers are a crucial component used to quite literally route information where it needs to go between networks.</p>
+		    </div>
+		    <div id="menu5" class="tab-pane fade">
+		      	<h3>Data Link Layer: Layer 2</h3>
+		      	<p>At the data link layer, directly connected nodes are used to perform node-to-node data transfer where data is packaged into frames. The data link layer also corrects errors that may have occurred at the physical layer.</p>
+
+				<p>The data link layer encompasses two sub-layers of its own. The first, media access control (MAC), provides flow control and multiplexing for device transmissions over a network. The second, the logical link control (LLC), provides flow and error control over the physical medium as well as identifies line protocols.</p>
+		    </div>
+		    <div id="menu6" class="tab-pane fade">
+		      	<h3>Physical Layer: Layer 1</h3>
+		      	<p>Considered as the lowest layer of the OSI Model. It is responsible to electrically or optically transmitting raw unstructured data bits across the network from the physical layer of the sending device to the physical layer of the receiving device. The specified layer includes the specifications such as voltages, pin layout, cabling, and radio frequencies. At the physical layer, one might find “physical” resources such as network hubs, cabling, repeaters, network adapters or modems.</p>
+		    </div>
+		  </div>
+		</div>
+		<hr style="clear: both;">
+
+		<img style="float: right; background-color: #006666; border: 2px ridge; border-radius: 20px; padding: 10px; margin: 30px;"src="images/peertopeer.png" height="150px">
+
+		<p style="padding-bottom: 0px;"><b>Peer-to-peer Communication</b> - Each layer provides a protocol to communicate with its peer. When a packet is transmitted by a layer, a header is added to the data to be sent. The protocol data unit so-formed, is passed via a service access point to the layer below. This is then sent using the service of the next lower protocol layer.</p>
+
+		<p style="padding-bottom: 0px;"><b>PDUs</b> - A protocol data unit is information delivered as a unit among peer entities of networks containing control information, address information or data. In layered systems, PDU represents a unit of data specified in the protocol of a given layer, which consists of protocol control information and user data.</p>
+
+		<hr style="clear: both;">
+
+		<img style="float: left; background-color: #006666; border: 2px ridge; border-radius: 20px; padding: 10px; margin: 30px;"src="images/capsulation.gif" height="400px">
+		<br>
+		<p style="padding-bottom: 0px;"><b>Encapsulation</b> - The process in which some extra information is added to the data item to add some features to it. It adds the protocol information to the data so that data transmission can take place in a proper way. This information can either be added in the header or the footer of the data.</p>
+
+		<p style="padding-bottom: 0px;"><b>De-Encapsulation</b> -The process where header and trailer in the model attached in encapsulation process are removed. Physical layer picks encoded signals from media and converts them in frames and hands them over to the data link layer.</p>
+
+		<hr style="clear: both;">
+		<h2>TCP/IP Model</h2>
+		<hr style="clear: both;">
+
+		<p style="padding-bottom: 0px;"><b>Transmission Control Protocol/Internet Protocol</b> - A standard Internet communications protocols that allow digital computers to communicate over long distances. 
+
+		<div style="padding-top: 0px;">
+		<ul style="padding-left: 0px">
+			<li>The process of sending data in the internet undergoes a packet-switched network, in which information is broken down into small packets, sent individually over many different routes at the same time, and then reassembled at the receiving end.</li>
+			<li>It is the component that collects and reassembles the packets of data, while IP is responsible for making sure the packets are sent to the right destination. </li>
+			<li>It was developed in the 1970s and adopted as the protocol standard for ARPANET (the predecessor to the Internet) in 1983.</li>
+		</ul>
+		</div>
+
+		<hr style="clear: both;">
+
+		<h2 style="padding:0px; margin: 0px;">TCP/IP model consists of four layers:</h2>
+		<div style="display: flex;" class="container justify-content-center">
+		  <ul class="nav nav-tabs nav-stacked">
+		  	<br><br>
+		    <li class="active"><a data-toggle="tab" href="#twohome">Application</a></li>
+		    <li><a data-toggle="tab" href="#twomenu1">Transport</a></li>
+		    <li><a data-toggle="tab" href="#twomenu2">Internet</a></li>
+		    <li><a data-toggle="tab" href="#twomenu3">Network Access</a></li>
+		  </ul>
+
+		  <div class="tab-content">
+		    <div id="twohome" class="tab-pane fade in active">
+				<h3>Application Layer: Layer 4</h3>
+				<p>The top-most layer of four-layer TCP/IP model. Application layer is placed on the top of the Transport layer. Application layer defines TCP/IP application protocols and how host programs interface with Transport layer services to use the network.</p>
+
+				<p>Includes all the higher-level protocols like:</p>
+				<ul style="padding-left: 150px;">
+					<li>FTP -  File Transfer Protocol</li>
+					<li>HTTP - Hypertext Transfer Protocol</li>
+					<li>SMTP - Simple Mail Transfer Protocol</li>
+					<li>DNS - Domain Naming Systems</li>
+					<li>TFTP - Trivial File Transfer Protocol</li>
+				</ul>
+			</p>
+		    </div>
+		    <div id="twomenu1" class="tab-pane fade">
+				<h3>Transport Layer: Layer 3</h3>
+		      	<p>The third layer of the four-layer TCP/IP model. The position of the Transport layer is between Application layer and Internet layer. The purpose of Transport layer is to permit devices on the source and destination hosts to carry on a conversation. Transport layer defines the level of service and status of the connection used when transporting data.</p>
+
+				<p>The main protocols included at Transport layer are:</p>
+				<ul style="padding-left: 150px;">
+					<li>TCP - Transmission Control Protocol</li>
+					<ul>
+						<li>FTP -  File Transfer Protocol</li>
+						<li>HTTP - Hypertext Transfer Protocol</li>
+						<li>SMTP - Simple Mail Transfer Protocol</li>
+						<li>DNS - Domain Naming Systems</li>
+					</ul>
+					<li>UDP - User Datagram Protocol</li>
+					<ul>
+						<li>DNS - Domain Naming Systems</li>
+						<li>TFTP - Trivial File Transfer Protocol</li>
+					</ul>
+				</ul>
+		    </div>
+		    <div id="twomenu2" class="tab-pane fade">
+				<h3>Internet Layer: Layer 2</h3>
+				<p>The position of Internet layer is between Network Access Layer and Transport layer. Internet layer pack data into data packets which contain source and destination address (logical address or IP address) information that is used to forward the datagrams between hosts and across networks.</p>
+
+				<p>The Internet layer is also responsible for routing in the IP</p>
+				<ul style="padding-left: 150px;">
+					<li>IP - Internet Protocol</li>
+					<ul>
+						<li>TCP - Transmission Control Protocol</li>
+						<li>UDP - User Datagram Protocol</li>
+					</ul>
+				</ul>
+		    </div>
+		    <div id="twomenu3" class="tab-pane fade">
+				<h3>Network Access Layer: Layer 1</h3>
+				<p>The first layer of the four-layer TCP/IP model. Network Access Layer defines the details of how data is physically sent through the network, including how bits are electrically or optically signaled by hardware devices that interface directly with a network medium, such as coaxial cable, optical fiber, or twisted pair copper wire.</p>
+
+					<p>Network Layer involves the following components that will continue from the IP:</p>
+				<ul style="padding-left: 150px;">
+					<li>Internet</li>
+					<li>Personal LAN</li>
+					<li>Other LANs and WANs</li>
+					<ul>
+						<li>IP - Internet Protocol</li>
+					</ul>
+				</ul>
+		    </div>
+		</div>
+		</div>
+		<hr style="clear: both;">
+
+		<p align="right"><a class="link" href="#top">Go to the top</p>
+	</div>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+		#left{
+			float:left;
+			margin-left:-100px;
+		}
+		#right{
+			float:right;
+		}
+
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="designs/module5Design.css">
+	<div>
+	<ul>
+		<li><a href="umali_module5.html">LANs and WANs</a></li>
+		<li><a href="agosto_module4.html">Cable Testing</a></li>
+		<li><a href="calasan_module3.html">Media</a></li>
+		<li><a href="bravo_module2.html">Fundamentals</a></li>
+		<li><a href="mesinas_module1.html">Introduction</a></li>
+		<li><a href="Homepage.html">Homepage</a></li>
+	</ul>
+	
+	
+	<br>
+	
+	<h1 class="title">Module 5: Cabling LANs and WANs</h1>
+
+	<hr>
+	</div>
+	<br><br><br><br><br><br><br>
+	<div class="container">
+	<h1 class="subtopic">I. CABLING THE LAN</h1>
+	</div>
+	<br><br><br><br><br><br>
+	<div class="container">
+		<div>	
+			<br><br><br>
+			<h2>LAN Physical Layer</h2>
+			<div align="center">
+				<img src="images/module5/LAN Phyiscal Layer.png" alt="Lan Physical Layer">
+			</div>
+			<div class="description">
+				<p>&bull; Physical layer implementations vary and some implementations support multiple physical media.
+				<br><br>
+				&bull; Each type of media has advantages and disadvantages. These are based on the following factors: <b>Cable length</b>, <b>Cost</b>, 
+				<b>Ease of installation</b>, <b>Susceptibility to interference</b>
+				</p>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Ethernet In The Campus</h2>
+			<div align="center">
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Ethernet 10BASE-T Implementation</th>
+						<th>Fast Ethernet Implementation</th>
+						<th>Gigabit Ethernet Implementation</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>End-user Level (End-user device to workgroup device)</td>
+						<td>Provides connectivity for low-to medium-volume applications.</td>
+						<td>Gives high performance PC workstations 100-Mbps access to the server.</td>
+						<td>Not typically used at this level.</td>
+					</tr>
+					<tr>
+						<td>Workgroup Level (Workgroup device to backbone)</td>
+						<td>Not typically used at this level.</td>
+						<td>Provides connectivity between the end user and workgroups. Provides connectivity form the workgroup to backbone. Provides connectivity from the server block to the backbone layer.</td>
+						<td>Provides high-performance connectivity to the enterprise server block.</td>
+					</tr>
+					<tr>
+						<td>Backbone level</td>
+						<td>Not typically used at this level.</td>
+						<td>Provides connectivity from the workgroup server block to the backbone.</td>
+						<td>Provides high-speed backbone and network device connectivity.</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>RJ-45 Plug/Jack</h2>
+			<div class="container">
+				<img src="images/module5/rj45-plug.png" alt="RJ-45 Plug" style="width:30%;margin-left:10px;">
+				<img src="images/module5/rj45-jack.png" alt="RJ-45 Jack" style="float:right;margin-left:50px;width:30%;">
+			</div>
+			<div class="description">
+				<p>The jack is the female component in a network device, wall outlet, or patch panel. Punch-down connections at the back of the jack where the Ethernet UTP cable connects.</p>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>UTP Implementation</h2>
+			<div align="center">
+				<img src="images/module5/UTP Implementation.png" alt="UTP Implementation">
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Straight-through Cable</h2>
+			<div align="center">
+				<img src="images/module5/Straight-through cable.png" alt="Straight-through cable">
+			</div>
+			<div align="center">
+				<div class="description">
+					<p style="margin-top:-100px;text-align:left;margin-left:-30px;"><br><br><br>
+					&#8594; Switch to router<br><br>
+					&#8594; Switch to PC or server<br><br>
+					&#8594; Hub to PC or server 
+					</p>
+				</div>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Cross-over Cable</h2>
+			<div align="center">
+				<img src="images/module5/Cross-over cable.png" alt="Cross-over cable">
+			</div>
+			<div align="center">
+				<div class="description">
+					<p style="margin-top:-100px;text-align:left;margin-left:-30px;"><br><br><br>
+					&#8594; Switch to switch <br><br>
+					&#8594; Switch to hub<br><br>
+					&#8594; Hub to hub <br><br>
+					&#8594; Router to router <br><br>
+					&#8594; PC to PC  <br><br>
+					&#8594; Router to PC
+					</p>
+				</div>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>UTP Crossover Cable</h2>
+			<div align="center">
+				<img src="images/module5/UTP Crossover Cable.png" alt="UTP Crossover Cable">
+			</div>
+			<div class="description">
+				<p>Use crossover cable when <b>BOTH</b> ports are designated with an "x" or neither port is designated with an "x"</p>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>UTP Usage</h2>
+			<div align="center">
+				<img src="images/module5/UTP Usage.png" alt="UTP Crossover Cable">
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Repeaters</h2>
+			<div align="center">
+				<img src="images/module5/Repeaters.png" alt="Repeaters">
+			</div>
+			<div class="description">
+				<p>A repeater receives a signal and regenerates it. It can retime network signals at the bitlevel to allow them to travel a longer distance on the media.</p>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Hubs</h2>
+			<div align="center">
+				<img src="images/module5/Hub.png" alt="Hub">
+			</div>
+			<div class="description">
+				<p>
+				Passive<br><br>
+					– A passive hub serves as a physical connection point only.<br><br>
+					– It does not manipulate or view the traffic that crosses it.<br><br>
+					– It does not boost or clean the signal.<br><br><br><br>
+				• Active<br><br>
+					– It needs power to amplify the incoming signal before passing it out to the other ports.<br><br><br><br>
+				• Intelligent<br><br>
+					– These devices basically function as active hubs<br><br>
+					– It also includes a microprocessor chip and diagnostic capabilities.<br><br>
+				</p>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Wireless Media</h2>
+			<div class="description">
+				<p>&#8594; electromagnetic waves that travel through the air</p>
+				<p>&#8594; use radio frequency (RF), laser, infrared (IR), satellite, or microwaves to carry signals between computers without a permanent cable 	connection.</p>
+				<p>&#8594; use radio frequency (RF), laser, infrared (IR), satellite, or microwaves to carry signals between computers without a permanent cable connection.</p>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Host Connectivity: NIC</h2>
+			<div class="container">
+				<img src="images/module5/NIC.png" alt="NIC" style="width:30%;margin-left:10px;">
+				<img src="images/module5/NIC2.png" alt="NIC" style="float:right;margin-left:50px;width:30%;">
+			</div>
+			<div class="description">
+				<p>&#8594; The function of a NIC is to connect a host device to the network medium. It is a printed circuit board that fits into the expansion slot on the motherboard or peripheral device of a computer. The NIC is also referred to as a network adapter.</p>
+				<p>&#8594; NICs are classified as Data Link Layer (Layer 2) devices because each NIC carries a unique code called a MAC address, this address is used to control data communication for the host on the network. NICs control host access to the medium.</p>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Peer-to-peer</h2>
+			<div align="center">
+				<img src="images/module5/peer-to-peer.png" alt="Peer-to-peer">
+			</div>
+			<div class="description">
+				<p>&#8594; In a peer-to-peer network, networked computers act as equal partners, or peers</p>
+				<p>&#8594; Individual users control their own resources.</p>
+				<p>&#8594; Peer-to-peer networks are relatively easy to install and operate.</p>
+				<p>&#8594; As networks grow, peer-to-peer relationships become increasingly difficult to coordinate.</p>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Client/server</h2>
+			<div class="container">
+				<img src="images/module5/Client_server.png" alt="Client/server" style="width:40%;margin-left:10px;">
+				<img src="images/module5/Client_server2.png" alt="Client/server" style="float:right;margin-left:50px;width:40%;">
+			</div>
+			<div class="description">
+				<p>&#8594; network services are located on a dedicated computer called a server.</p>
+				<p>&#8594; Servers are designed to handle requests from many clients simultaneously.</p>
+				<p>&#8594; Data generated is easier to back-up and maintain.</p>
+			</div>
+			<br><br>
+			<div align="center">
+			<table>
+				<thead>
+					<tr>
+						<th>Advantages of a Peer-to-Peer Network</th>
+						<th>Advantages of a Client/Server Network</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Less expensinve to implement</td>
+						<td>Provides better security</td>
+					</tr>
+					<tr>
+						<td>Does not require additional specialized network administration software</td>
+						<td>Easier to administer when the network is large because administration is centralized</td>
+					</tr>
+					<tr>
+						<td>Does not require a dedicated network administrator</td>
+						<td>All data can be backed up on one central location</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<br><br>
+			<div align="center">
+			<table>
+				<thead>
+					<tr>
+						<th>Disadvantages of a Peer-to-Peer Network</th>
+						<th>Disadvantages of a Client/Server Network</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Does not scale well to large networks and administraion becomes unmanageable</td>
+						<td>Requires expensive specialized network administrative and operational software</td>
+					</tr>
+					<tr>
+						<td>Each user must be trained to perform administrative tasks</td>
+						<td>Requires expensive, more powerful hardware for the server machine</td>
+					</tr>
+					<tr>
+						<td>Less secure</td>
+						<td>Requires a professional administrator</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="container">
+	<h1 class="subtopic">II. CABLING THE WAN</h1>
+	</div>
+	<br><br><br>
+	<div class="container">
+		<div>
+			<br><br><br>
+			<h2>WAN Serial Connections</h2>
+			<div align="center">
+			<table>
+				<thead>
+					<tr>
+						<th>Data (bps)</th>
+						<th>Distance (Meters) EIA/TIA-232</th>
+						<th>Distance (Meters) EIA/TIA-449</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2400</td>
+						<td>60</td>
+						<td>1250</td>
+					</tr>
+					<tr>
+						<td>4800</td>
+						<td>30</td>
+						<td>625</td>
+					</tr>
+					<tr>
+						<td>6900</td>
+						<td>15</td>
+						<td>312</td>
+					</tr>
+					<tr>
+						<td>19200</td>
+						<td>15</td>
+						<td>156</td>
+					</tr>
+					<tr>
+						<td>38400</td>
+						<td>15</td>
+						<td>78</td>
+					</tr>
+					<tr>
+						<td>115200</td>
+						<td>3.7</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>T1 (1.544 Mbps)</td>
+						<td>-</td>
+						<td>15</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>WAN Serial Connections</h2>
+			<div align="center">
+				<img src="images/module5/WAN Serial Connections.png" alt="WAN Serial Connections">
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Fixed Module Router</h2>
+			<div align="center">
+				<img src="images/module5/Fixed Module Router.png" alt="Fixed Module Router">
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Module Router</h2>
+			<div align="center">
+				<img src="images/module5/Module Router.png" alt="Module Router">
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Routers and ISDN BRI Connections</h2>
+			<div align="center">
+				<img src="images/module5/Routers and ISDN BRI Connections.png" alt="Routers and ISDN BRI Connections">
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Routers and DSL Connections</h2>
+			<div align="center">
+				<img src="images/module5/Routers and DSL Connections.png" alt="Routers and DSL Connections">
+			</div>
+			<div class="description">
+				<p>&#8594; The Cisco 827 ADSL router has one asymmetric digital subscriber line (ADSL) interface.</p>
+				<p>&#8594; To connect an ADSL line to the ADSL port on a router.</p>
+			</div>
+			<br><br><br><br><br><br><br>
+			<h2>Setting up Console Connections</h2>
+			<div align="center">
+				<img src="images/module5/Setting up console connections.png" alt="Setting up console connections">
+			</div>
+			<div class="description">
+				<p>&#8594; PCs require an RJ-45 to DB-9 or RJ-45 to DB-25</p>
+				<p>&#8594; COM port settings are 9600 bps, 8 data bits, no parity, 1 stop bit, no flow control</p>
+				<p>&#8594; This provides out-of-band console access</p>
+				<p>&#8594; AUX switch port may be used for a modem-connected console</p>
+			</div>
+		</div>
+		<a href="#start"><blockquote style="float:right;">Go to the top</blockquote></a>
+	</div>
+</body>
+</html>
