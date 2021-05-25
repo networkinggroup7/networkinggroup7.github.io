@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" >
     <title>Networking Media</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style> 
     	body, table td, table th {
     		font-size: 20px;
@@ -29,12 +30,15 @@
 			border-style: ridge;
 			border-radius: 20px;
     	}
+
+
+
     </style>
 </head>
 <body>
 	<link rel="stylesheet" type="text/css" href="designs/MainDesign.css">
 	<div class="header">
-	<ul>
+	<ul style="padding-top: 20px">
 		<li><a href="umali_module5.html">LANs and WANs</a></li>
 		<li><a href="agosto_module4.html">Cable Testing</a></li>
 		<li><a href="calasan_module3.html">Media</a></li>
@@ -45,9 +49,12 @@
 	
 	<br>
 	
-	<h1 class="title">Module 3: Networking Media</h1>
+	<h1 style="font-size: 2em;" class="title">Module 3: Networking Media</h1>
 
 	<hr>
+
+		<p><q>Network media is the actual path over which an electrical signal travels as it moves from one component to another. This chapter describes the common types of network media, including twisted-pair cable, coaxial cable, fiber-optic cable, and wireless.</q><br>
+		<a class="Bodylink" href="https://www.ciscopress.com/articles/article.asp?p=31276">- ciscopress.com</a></p>
 	</div>
 	
 	<div>
@@ -80,32 +87,32 @@
 		<p>
 		Coaxial cable was invented in 1880 by English engineer and mathematician Oliver Heaviside, who patented the invention and design that same year. AT&T established its first cross-continental coaxial transmission system in 1940.</p>
 
-		<h1>Types of Coaxial Cable</h1>		
+		<h2>Types of Coaxial Cable</h2>		
 				<div align="center">
 					<table>
 						<tr>
 							<th>Hard Line Coaxial Cable<br>
-							<img src="images/hardline.png" height="120px"></th>
+							<img src="images/hardline.png" height="120px" width="120px"></th>
 							<td>Hard line coaxial cable makes use of a center conductor that is constructed out of materials such as copper, silver, aluminum, or steel and this type of cable is typically larger in diameter than other forms of coaxial cable.</td>
 						</tr>
 						<tr>
 							<th>Flexible Coaxial Cable<br>
-							<img src="images/flexible.jpg" height="120px"></th>
+							<img src="images/flexible.jpg" height="120px" width="120px"></th>
 							<td>can move and flex as needed to suit the configuration and geometry of the application. A typical design for flexible coaxial cable utilizes a metal inner conductor surrounded by a flexible polymer that functions as the dielectric, with an outer jacket for protection from the environment.</td>
 						</tr>
 						<tr>
 							<th>Semi-rigid Coaxial Cable<br>
-							<img src="images/rigid.png" height="120px"></th>
+							<img src="images/rigid.png" height="120px" width="120px" ></th>
 							<td>makes use of a solid copper outer sheath with a dielectric of PTFE. The copper sheath generally provides superior shielding effectiveness and the dielectric properties offer enhanced high frequency performance.</td>
 						</tr>
 						<tr>
 							<th>Formable Coaxial Cable<br>
-							<img src="images/formable.png" height="120px"></th>
+							<img src="images/formable.png" height="120px" width="120px" ></th>
 							<td>An alternative to semi-rigid coaxial cable is formable coaxial cable, also known as conformable coaxial cable. In place of a rigid copper outer sheath, a flexible metal sheath is used, which can be reshaped and formed by hand the meet the desired cable configuration requiring any specialized tools.</td>
 						</tr>
 						<tr>
 							<th>Twin Axial Cable<br>
-							<img src="images/twinaxial.jpg" height="120px"></th>
+							<img src="images/twinaxial.jpg" height="120px" width="120px" ></th>
 							<td> are reduced cable loss, greater protection from ground loops and capacitive fields, and a reduction in low-frequency magnetic noise. These cables are best suited for use in low-frequency digital and video applications.</td>
 						</tr>
 					</table>
@@ -145,8 +152,145 @@
 			</table>
 		</div>
 
-		<p>Logical Topology reflects arrangement of devices and their communication. It is the transmission of data over physical topology. It is independent of physical topology, irrespective of arrangements of nodes. It defines the process of how the media is accessed by the hosts when sending data.</p>
+		<div align="center">
+			<figcaption><h3>Making Twisted-Pair Cable Connections</h3></figcaption>
+			<figcaption><h3>One of the skills required of a network technician is making a twisted-pair patch cable</h3></figcaption>			
+			<table>
+				<tr>
+					<td>To do this, you need:</td>
+				</tr>
+				<tr>
+					<td>Wire cutters or electrician’s scissors</td>
+				</tr>
+				<tr>
+					<td>Wire stripper</td>
+				</tr>
+				<tr>
+					<td>Crimp tool</td>
+				</tr>
+				<tr>
+					<td>RJ-45 plugs</td>
+				</tr>
+			</table>
+		</div>
 
+		<h2>Several components are available to help organize large UTP installations </h2>
+
+				<div align="center">
+					<table>
+						<tr>
+							<th>Rack Shelves <br>
+							<img src="images/distribution.jpg" height="120px" width="120px"></th>
+							<td>Rack shelves can create more room for cables where there isn't much floor space. Using them is a good way to organize a network that has a lot of connections.</td>
+						</tr>
+						<tr>
+							<th>Expandable patch panels <br>
+							<img src="images/patch panels.jpg" height="120px" width="120px"></th>
+							<td>These come in various versions that support up to 96 ports and transmission speeds of up to 100 Mbps.</td>
+						</tr>
+						<tr>
+							<th>Jack couplers <br>
+							<img src="images/jack.jpeg" height="120px" width="120px" ></th>
+							<td>These single or double RJ-45 jacks snap into patch panels and wall plates and support data rates of up to 100 Mbps.</td>
+						</tr>
+						<tr>
+							<th>Wall plate<br>
+							<img src="images/wall.jpg" height="120px" width="120px"></th>
+							<td>These support two or more couplers.</td>
+						</tr>
+					</table>
+				</div>
+		<h2>Twisted-Pair Cabling Considerations</h2>
+		<center><p><u>Use twisted-pair cable if:</u><br><br>Your LAN is under budget constraints.<br><br>You want a relatively easy installation in which computer connections are simple.</p></center>	
+		<center><p><u>Do not use twisted-pair cable if:</u><br><br>Your LAN requires a high level of security and you must be absolutely sure of data integrity. <br><br>You must transmit data over long distances at high speeds.</p></center>
+
+		<h1>Fiber-Optic Cable</h1>
+		<p>A fiber optic cable is a network cable that contains strands of glass fibers inside an insulated casing. They're designed for long-distance, high-performance data networking, and telecommunications. Compared to wired cables, fiber optic cables provide higher bandwidth and transmit data over longer distances. Fiber optic cables support much of the world's internet, cable television, and telephone systems.</p>
+
+		<h2>Fiber-Optic Cabling Considerations</h2>
+		<center><p><u>Use fiber-optic cable if you:</u><br><br>Need to transmit data at very high speeds over long distances in very secure media.</p></center>	
+		<center><p><u>Do not use fiber-optic cable if you:</u><br><br>Are under a tight budget.<br><br>Do not have the expertise available to properly install it and connect devices to it.</p></center>
+
+		<div align="center">
+			<figcaption><h3>Cable Selection Criteria</h3></figcaption>
+			<table>
+				<th>Criteria to be considered for a network installation</th>
+				<tr>
+					<th>Bandwidth<br></th>
+				</tr>
+				<tr>
+					<th>Budget<br></th>
+				</tr>
+				<tr>
+					<th>Capacity<br></th>
+				</tr>
+				<tr>
+					<th>Environmental considerations<br></th>
+				</tr>
+				<tr>
+					<th>Placement<br></th>
+				</tr>
+				<tr>
+					<th>Span<br></th>
+				</tr>
+				<tr>
+					<th>Local requirement<br></th>
+				</tr>
+				<tr>
+					<th>Existing cable plant<br></th>
+				</tr>								
+			</table>
+		</div>
+			<center><figcaption><h3>Bandwidth</h3></figcaption></center>
+			<P>The term bandwidth refers to the measure of the capacity of a medium to transmit data. A medium that has a high capacity, for example, has a high bandwidth, whereas a medium that has limited capacity has a low bandwidth</P>
+			<br>
+			<center><figcaption><h3>Baseband Transmission</h3></figcaption></center>
+			<P>Is a signaling technology that sends digital signals over a single frequency as discrete electrical pulses. The entire bandwidth of a baseband system carries only one data signal and is generally less than the amount of bandwidth available on a broadband transmission system.</P>			
+			<br>
+			<center><figcaption><h3>Broadband Transmission</h3></figcaption></center>
+			<P>Broadband Transmission is a signaling technology that sends signals simultaneously over a range of different frequencies as electromagnetic waves. The bandwidth of a broadband system can usually carry multiple, simultaneous data signals.</P>
+			<br>
+			<center><figcaption><h3>Structured Cabling</h3></figcaption></center>
+			<P>Structured cabling is defined as building or campus telecommunications cabling infrastructure. Typically, it consists of a number of standardized smaller elements. In a structured cabling system, there is a structure created by a series of patch panels and trunks. It allows for a connection from hardware ports to a patch panel at the top of the rack.</P>
+			<br>
+			<center><figcaption><h3>Work Area</h3></figcaption></center>
+			<P>Is where computer workstations and other user devices are located</P>
+			<br>
+			<center><figcaption><h3>Horizontal Wiring</h3></figcaption></center>
+			<P>Horizontal Cabling is any cabling that is used to connect a floor’s wiring closet to wall plates in the work areas to provide local area network (LAN) drops for connecting users’ computers to the network.</P>			
+			<br>
+			<center><figcaption><h3>Equipment Rooms</h3></figcaption></center>
+			<P>houses servers, routers, switches, and other major network equipment, and serves as a connection point for backbone cabling running between TCs</P>											
+			<br>
+			<center><figcaption><h3>Backbone Cabling</h3></figcaption></center>
+			<P>Backbone cabling is the inter-building and intra-building cable connections in structured cabling between entrance facilities, equipment rooms and telecommunications closets. Backbone cabling consists of the transmission media, main and intermediate cross-connects and terminations at these locations. This system is mostly used in data centers.</P>						
+			<br>
+			<center><figcaption><h3>Entrance Facilities</h3></figcaption></center>
+			<P>Is the location of the cabling and equipment that connects a corporate network to a third-party telecommunications provider.Can serve as an equipment room and the main cross-connect for all backbone cabling</P>
+
+		<h1>The Wireless World</h1>	
+        <center><p>Access in environments where layout and settings change constantly, Ready access to data for mobile professionals</p>
+        </center>
+
+		<br>
+		<center><figcaption><h3>Laser-Based LAN Technologies</h3></figcaption></center>
+		<P>, laser-based LAN devices are subject to many of the same limitations as infrared, but aren’t as susceptible to interference from visible light sources</P>
+
+		<br>
+		<center><figcaption><h3>802.11 Wireless Networking</h3></figcaption></center>
+		<P>802.11 wireless is an extension to Ethernet using airwaves as the medium; most 802.11 networks incorporate wired Ethernet segments</P>
+
+		<br>
+		<center><figcaption><h3>Fixed WiMax: 802.16-2004</h3></figcaption></center>
+		<P>Fixed WiMax can blanket an area up to a mile in radius, compared to just a few hundred feet for 802.11</P>
+
+		<h1>Summary</h1>
+		<p>Working with network media requires attention to requirements, budget, distance, bandwidth, and environmental factors.Cabled networks typically use one of two transmission schemes: broadband or baseband</p>
+
+		<p>For wired networks, the primary choices are twisted-pair and fiber-optic cables Twisted-pair cable can be unshielded or shielded Fiber-optic cable: highest bandwidth, best security and resistance to interference, but the most expensive</p>
+
+		<p>Structured cabling facilitates troubleshooting, modifying, and expanding a network cable plant</p>
 		<p align="right"><a class="link" href="#top">Go to the top</p>
 	</div>
+
 </html>
